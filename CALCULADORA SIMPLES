@@ -16,15 +16,19 @@ int main()
     cout << "+: ADIÇÃO" << endl;
     cout << "-: SUBTRAÇÃO" << endl;
     cout << "*: MULTIPLICAÇÃO" << endl;
-    cout << "^: ELEVAR" << endl;
+    cout << "^: POTÊNCIA" << endl;
     cin >> operador;
 
     cout << "DIGITE UM NUMERO QUALQUER: " << endl;
     cin >> N2;
 
-    if (operador == '/') {
+ if (operador == '/') {
+    if (N2 != 0) {
         cout << N1 / N2 << endl;
+    } else {
+        cout << "ERRO: Divisão por zero!" << endl;
     }
+}
 
     else if (operador == '+') {
         cout << N1 + N2 << endl;
